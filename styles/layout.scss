@@ -1,0 +1,13 @@
+.layout {
+    position: relative;
+    margin: auto;
+    height: 800px;
+
+    @include bp-desktop {
+      @include rem(width, 1024);
+    }
+
+    &-page {
+        @include rem(padding-top, 100);
+    }
+}

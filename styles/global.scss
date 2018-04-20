@@ -1,0 +1,21 @@
+@import url("https://use.typekit.net/lun3cxn.css");
+
+body {
+    background-color: $clr-grey-lt;
+    font-family: 'fira-sans';
+    font-weight: 300;
+    margin: 0;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+}
+
+h1, h2, h3 {
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}

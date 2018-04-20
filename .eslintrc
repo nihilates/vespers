@@ -1,0 +1,22 @@
+{
+  "extends": ["airbnb-standard"],
+  "rules": {
+    "semi": [2, "never"],
+    "object-curly-spacing": [2, "always"],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/react-in-jsx-scope": "off",
+    "jsx-quotes": [2, "prefer-single"],
+    "jsx-a11y/anchor-is-valid": [ "error", {
+      "components": [ "Link" ],
+      "specialLink": [ "hrefLeft", "hrefRight" ],
+      "aspects": [ "invalidHref", "preferButton" ]
+    }],
+    "comma-dangle": ["error", {
+      "arrays": "only-multiline",
+      "objects": "only-multiline",
+      "imports": "never",
+      "exports": "never",
+      "functions": "never",
+    }],
+  }
+}

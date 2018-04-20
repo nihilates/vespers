@@ -1,0 +1,9 @@
+.fade {
+    opacity: 0;
+    transition: all 1s ease;
+
+    &.fade-mounted {
+        transform: translateY(0) !important;
+        opacity: 1;
+    }
+}

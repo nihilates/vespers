@@ -1,0 +1,44 @@
+{
+  "name": "vespers",
+  "version": "2.0.0",
+  "description": "EllisonChen.net SPA/Website using react + next.js",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next"
+  },
+  "keywords": [
+    "EllisonChen"
+  ],
+  "author": "Sean Ellison-Chen",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome": "^1.1.5",
+    "@fortawesome/fontawesome-free-brands": "^5.0.10",
+    "@fortawesome/fontawesome-free-solid": "^5.0.10",
+    "@fortawesome/react-fontawesome": "^0.0.18",
+    "autoprefixer": "^8.2.0",
+    "babel-plugin-module-resolver": "^3.1.1",
+    "babel-plugin-wrap-in-js": "^1.1.1",
+    "classnames": "^2.2.5",
+    "glob": "^7.1.2",
+    "next": "^5.1.0",
+    "node-sass": "^4.8.3",
+    "postcss-easy-import": "^3.0.0",
+    "postcss-loader": "^2.1.3",
+    "prop-types": "^15.6.1",
+    "raw-loader": "^0.5.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-helmet": "^5.2.0",
+    "react-lazyload": "^2.3.0",
+    "sass-loader": "^6.0.7"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-airbnb-standard": "^1.6.6",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0",
+    "sass-lint": "^1.12.1"
+  }
+}

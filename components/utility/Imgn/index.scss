@@ -1,0 +1,8 @@
+.prog-image {
+    transition: filter .3s linear;
+
+    &.is-loading {
+        background-color: $clr-grey;
+        filter: blur(50px);
+    }
+}

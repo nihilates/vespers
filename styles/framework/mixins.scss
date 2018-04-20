@@ -1,0 +1,40 @@
+/* Convert PX to REM */
+@mixin rem($property, $pxval, $base: 16, $importance: '') {
+    #{$property}: #{$pxval}px unquote($importance);
+    #{$property}: #{$pxval / $base}rem unquote($importance);
+}
+
+/* Return Formatted Box-Shadow */
+@mixin box-shadow($horizontal, $vertical, $blur, $spread, $color) {
+    -webkit-box-shadow: #{$horizontal}px #{$vertical}px #{$blur}px #{$spread}px $color;
+    -moz-box-shadow: #{$horizontal}px #{$vertical}px #{$blur}px #{$spread}px $color;
+    box-shadow: #{$horizontal}px #{$vertical}px #{$blur}px #{$spread}px $color;
+}
+
+@mixin transition($property, $time, $effect) {
+  -webkit-transition: #{$property} #{$time}s unquote($effect);
+  transition: #{$property} #{$time}s unquote($effect);
+}
+
+/* Return Breakpoints */
+@mixin bp-phone {
+    @media (max-width: 767px) { @content; }
+}
+@mixin bp-tablet {
+    @media (max-width: 1023px) and (min-width: 768px) { @content; }
+}
+@mixin bp-desktop {
+    @media (max-width: 1919px) and (min-width: 1024px) { @content; }
+}
+
+@mixin bp-phone-up {
+    @media (min-width: 425px) { @content; }
+}
+
+@mixin bp-tablet-up {
+    @media (min-width: 768px) { @content; }
+}
+
+@mixin bp-desktop-up {
+    @media (min-width: 1024px) { @content; }
+}

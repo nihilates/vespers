@@ -1,0 +1,26 @@
+.grid-container {
+  display: none;
+  position: absolute;
+  pointer-events: none;
+  z-index: 9999;
+  height: 100%;
+  overflow: hidden;
+  background-color: red;
+  opacity: .15;
+
+  @include bp-desktop {
+      @include rem(width, 1024);
+  }
+
+  @include bp-tablet {
+      @include rem(width, 768);
+  }
+
+  .grid-col {
+    @include rem(width, 65.33);
+    float: left;
+    height: 100%;
+    border-left: 10px solid purple;
+    border-right: 10px solid orange;
+  }
+}

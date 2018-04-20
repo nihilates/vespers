@@ -1,0 +1,15 @@
+.social {
+    &-media {
+        @include rem(margin-right, 10);
+    }
+
+    &-icon {
+        @include rem(padding-left, 5);
+        @include transition(color, .3, 'ease-in')
+        color: $clr-grey;
+
+        &:hover {
+            color: $clr-black;
+        }
+    }
+}
